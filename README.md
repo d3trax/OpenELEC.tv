@@ -2,9 +2,9 @@
 
 # OpenELEC - Open Embedded Linux Entertainment Center
 
-OpenELEC runs [XBMC](http://xbmc.org), an award-winning free and open source (GPL) software media 
+OpenELEC runs [XBMC](http://xbmc.org), an award-winning free and open source (GPL) software media
 player and entertainment hub for digital media. For more info see http://xbmc.org .
-The base system has been designed and built from the ground up to be as 
+The base system has been designed and built from the ground up to be as
 efficient as possible – consuming only tiny disk and memory footprints and
 providing cutting edge hardware support to deliver a set-top box experience.
 
@@ -22,25 +22,25 @@ providing cutting edge hardware support to deliver a set-top box experience.
 
 **License**
 
-* OpenELEC is released under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html). Please refer to the "licenses" folder and 
+* OpenELEC is released under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html). Please refer to the "licenses" folder and
   source code for clarification on upstream licensing.
 
 **Copyright**
 
-* Since OpenELEC includes code from many up stream projects it includes many 
-  copyright owners. OpenELEC makes NO claim of copyright on any upstream code. 
+* Since OpenELEC includes code from many up stream projects it includes many
+  copyright owners. OpenELEC makes NO claim of copyright on any upstream code.
   However all OpenELEC authored code is copyright openelec.tv.
   For a complete copyright list checkout the source code to examine the headers.
-  Unless expressly stated otherwise all code submitted DIRECTLY to the OpenELEC 
-  project (in any form) is licensed under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) and the Copyright is donated to 
+  Unless expressly stated otherwise all code submitted DIRECTLY to the OpenELEC
+  project (in any form) is licensed under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) and the Copyright is donated to
   openelec.tv.
   This allows the project to stay manageable in the long term by giving us the
-  freedom to maintain the code as part of the whole without the management 
+  freedom to maintain the code as part of the whole without the management
   overhead of preserving contact with every submitter ever e.g. move to GPLv3.
-  You are absolutely free to retain copyright. To retain copyright simply add a 
+  You are absolutely free to retain copyright. To retain copyright simply add a
   copyright header to every submitted code page.
-  If you are submitting code that is not your own work it is the submitters 
-  responsibility to place a header stating the copyright. 
+  If you are submitting code that is not your own work it is the submitters
+  responsibility to place a header stating the copyright.
 
 **Features**
 
@@ -66,18 +66,18 @@ providing cutting edge hardware support to deliver a set-top box experience.
   users might want to try PuTTY for their terminal access.
   Starting with OpenELEC 2.0, SSH is disabled by default but all that is needed
   is an empty “ssh_enable” file to exist in /storage/.config to enable it.
-* $HOME is mounted on /storage (the second ext4 partition on the drive). 
+* $HOME is mounted on /storage (the second ext4 partition on the drive).
   All data transfered to the machine will go here, the rest of the system is
   read-only with the exception of /var (containing runtime configuration data).
 * Manual update/downgrade procedure is as follows:
   Extract the snapshot and navigate to the 'target' directory.
   Copy KERNEL and SYSTEM along with KERNEL.md5 and SYSTEM.md5 to the 'Update' network share (or /storage/.update) on
-  your openelec machine. Your system will automatically upgrade during the 
+  your openelec machine. Your system will automatically upgrade during the
   next reboot.
-* Automatic mounting of filesystems is supported. Devices such as USB Flash 
+* Automatic mounting of filesystems is supported. Devices such as USB Flash
   sticks can be plugged into a running machine and will be mounted to /media,
   showing up in xbmc’s GUI.
-* Comments and questions are more than welcome, help is even better and patches 
+* Comments and questions are more than welcome, help is even better and patches
   are absolutely perfect!!
 
 **Questions/Support**
@@ -86,3 +86,8 @@ providing cutting edge hardware support to deliver a set-top box experience.
 * IRC chatroom **#openelec** on Freenode
 
 **Happy OpenELEC'ing**
+
+**My config**
+
+* Added python module lxml
+ - To install lxml add lxml to dependencies
